@@ -1,0 +1,81 @@
+.bgVideo {
+	object-fit: cover;
+	object-position: bottom right;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+.bgImage {
+	object-fit: cover;
+	object-position: bottom center;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.imageBg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom center;
+}
+
+.phaseIcon {
+	filter: drop-shadow(0px 0px 30px #a259ff);
+}
+
+.lastName {
+	color: #75a7d3;
+}
+
+.sectionTitle {
+	text-align: center;
+	color: #c66cff;
+	font-size: 60px;
+	position: relative;
+}
+.sectionTitle:before {
+	position: absolute;
+	content: " ";
+	display: block;
+	height: 1px;
+	border-top: 1px dashed rgba(255, 255, 255, 0.2);
+	left: 10%;
+	width: calc(40% - 100px);
+	top: 50%;
+}
+.sectionTitle:after {
+	position: absolute;
+	content: " ";
+	display: block;
+	height: 1px;
+	border-top: 1px dashed rgba(255, 255, 255, 0.2);
+	right: 10%;
+	width: calc(40% - 100px);
+	top: 50%;
+}
+
+@media screen and (max-width: 1023px) {
+	.bgVideo {
+		object-position: 70% center;
+	}
+}
+@media screen and (max-width: 767px) {
+	.bgVideo {
+		object-position: right top;
+	}
+}
+@media screen and (max-width: 570px) {
+	.bgVideo {
+		object-position: 85% top;
+	}
+
+	.mobile {
+		opacity: 0.4;
+	}
+}

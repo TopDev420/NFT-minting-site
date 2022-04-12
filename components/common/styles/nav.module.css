@@ -1,0 +1,44 @@
+.navIcon {
+	width: 26px;
+	height: 26px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	pointer-events: all;
+}
+
+.navIcon:after,
+.navIcon:before,
+.navIcon div {
+	background-color: #fff;
+	content: "";
+	display: block;
+	height: 3px;
+	margin: 5px 0px;
+	transition: all 0.2s ease-in-out;
+}
+
+.navIcon.open:before {
+	transform: translateY(8px) rotate(135deg);
+}
+
+.navIcon.open:after {
+	transform: translateY(-8px) rotate(-135deg);
+}
+
+.navIcon.open div {
+	transform: scale(0);
+}
+
+.menuBtn {
+	cursor: pointer;
+	transition: color 0.25s;
+}
+.menuBtn:hover {
+	color: #c66cff;
+}
+
+.disabledMenuBtn {
+	color: #8d8d88;
+	cursor: not-allowed;
+}
